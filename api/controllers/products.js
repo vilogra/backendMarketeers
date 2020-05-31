@@ -99,7 +99,7 @@ exports.deleteProduct = (req, res, next) => {
     .exec()
     .then((result) => {
       res.status(200).json({
-        book: result,
+        product: result,
         message: "Product deleted",
       });
     })

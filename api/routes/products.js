@@ -32,7 +32,7 @@ router.get("/products", productController.getAll);
 router.get("/products/:productId", productController.getProductById);
 router.post(
   "/products",
-  upload.single("bookImage"),
+  upload.single("productImage"),
   productController.postProduct
 );
 router.patch("/products/:productId", productController.updateProduct);
