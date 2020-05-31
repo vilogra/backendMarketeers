@@ -8,7 +8,8 @@ const productRoutes = require("./api/routes/products");
 const userRoutes = require("./api/routes/users");
 
 mongoose.connect(
-  `mongodb+srv://marketeers:${process.env.DATABASE_PW}@marketeers-o4nvd.mongodb.net/test?retryWrites=true&w=majority`
+  `mongodb+srv://marketeers:${process.env.DATABASE_PW}@marketeers-o4nvd.mongodb.net/test?retryWrites=true&w=majority`,
+  { useUnifiedTopology: true, useNewUrlParser: true }
 );
 
 app.use(morgan("dev"));
