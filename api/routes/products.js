@@ -36,6 +36,6 @@ router.post(
   productController.postProduct
 );
 router.patch("/products/:productId", productController.updateProduct);
-router.delete("/products/:productId", productController.deleteBook);
+router.delete("/products/:productId", productController.deleteProduct);
 
 module.exports = router;
